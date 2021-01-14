@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Compiler</title>
+
+  <!-- JQuery -->
+  <script src="/js/jquery-3.5.1.min.js"></script>
+
+  <!-- Jquery UI CSS -->
+  <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> -->
+  <link rel="stylesheet" href="/js/jquery-ui-1.12.1 (1)/jquery-ui-1.12.1/jquery-ui.css">
+
+  <!-- Jquery UI JS -->
+  <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
+  <script src="/js/jquery-ui-1.12.1 (1)/jquery-ui-1.12.1/jquery-ui.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div id="header">
+
+    <div id="logo">
+      Compiler
+    </div>
+
+    <div id="buttonContainer">
+      <div class="toggleButton active" id="html">HTML</div>
+      <div class="toggleButton" id="css">CSS</div>
+      <div class="toggleButton" id="javascript">JS</div>
+      <div class="toggleButton active" id="output">Output</div>
+
+    </div>
+
+  </div>
+
+  <div id="bodyContainer">
+
+    <textarea id="htmlPanel" class="panel"><p>Hello!</p></textarea>
+
+    <textarea id="cssPanel" class="panel hidden">p{color:green}</textarea>
+
+    <textarea id="javascriptPanel" class="panel hidden">//alert('hi');</textarea>
+
+    <iframe id="outputPanel" class="panel"></iframe>
+
+
+    <button class="prev" title="loads Previous content only if u have saved it.">
+      Load Previous Content
+    </button>
+
+    <button class="save" title="Save">
+      Save
+    </button>
+
+  </div>
+
+
+
+  <script src="app.js"></script>
+
+</body>
+
+</html>
